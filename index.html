@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="toastr.css">
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <script src="Jquery.js"></script>
+
+    <script src="Jquerymd5.js"></script>
+    <script type="text/javascript" src="toastr.js"></script>
+    <script src="default.js"> </script>
+    <script>
+    // if (window.module) module = window.module;
+</script>
+<title>Final Frontier</title>
+</head>
+
+<body>
+    <div class="svg-container">
+        <div class="trigger"></div>
+        <svg version="1.1" id="tick" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 37 37" style="enable-background:new 0 0 37 37;" xml:space="preserve">
+            <path class="circ path" style="fill:none;stroke:green;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;" d="
+            M30.5,6.5L30.5,6.5c6.6,6.6,6.6,17.4,0,24l0,0c-6.6,6.6-17.4,6.6-24,0l0,0c-6.6-6.6-6.6-17.4,0-24l0,0C13.1-0.2,23.9-0.2,30.5,6.5z" />
+            <polyline class="tick path" style="fill:none;stroke:green;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;" points="
+            11.6,20 15.9,24.2 26.4,13.8 " />
+        </svg>
+    </div>
+    <div class="svg-container1">
+        <div class="trigger1"> </div>
+        <svg class="cross__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="cross__circle" cx="26" cy="26" r="25" fill="none" />
+            <path class="cross__path cross__path-right" fill="none" d="M16,16 l20,20" />
+            <path class="cross__path cross__path-right" fill="none" d="M16,36 l20,-20" />
+        </svg>
+    </div>
+
+    <div class='splash-screen'>
+        <img src = 'ff.png' class='logo'>
+        <div class="splash-screen-center">
+        <center><h1 class="splash-level-no white"></h1>
+                <h2 class="splash-level-name yellow"></h2>
+            </center>
+        </div>
+    </div> 
+    <div class="level-screen">
+        <div class="levels-holder" style="height: 500px;">
+            <div data-level="1" class="level" id="level1" data-name="The Wookiee Civilization">
+                <h2 class="level-title">LEVEL 1</h2>
+                <div class="avatar-image" style="background:url(images/wookiee.png);background-size: cover;background-position: center center;"></div>
+                <h2 class="level-name">THE WOOKIEE CIVILIZATION</h2>
+                <div class="solved_questions">
+                    <span class="solved_number yellow">0</span>/2 solved
+
+                </div>
+            </div>
+            <div data-level="2" class="level" id="level2" data-name="The Romulan Civilization">
+                <div class="lock-image-holder">
+                    <img height="70" width="70" class="lock-image" src="images/lock-solid.png" />
+                </div>
+                <div class="level-info">
+                    <h2 class="level-title">LEVEL 2</h2>
+                    <div class="avatar-image" style="background:url(images/romulan.png);background-size: cover;background-position: center center;"></div>
+                    <h2 class="level-name">THE ROMULAN CIVILIZATION</h2>
+                    <div class="solved_questions">
+                        <span class="solved_number yellow">0</span>/3 solved
+
+                    </div>
+                </div>
+            </div>
+            <div data-level="3" class="level" id="level3" data-name="The Na'Vi Civilization">
+                <div class="lock-image-holder">
+                    <img height="70" width="70" class="lock-image" src="images/lock-solid.png" />
+                </div>
+                <div class="level-info">
+                    <h2 class="level-title">LEVEL 3</h2>
+                    <div class="avatar-image" style="background:url(images/navi.png);background-size: cover;background-position: center center;"></div>
+                    <h2 class="level-name">THE NA'VI CIVILIZATION</h2>
+                    <div class="solved_questions">
+                        <span class="solved_number yellow">0</span>/4 solved
+
+                    </div>
+                </div>
+            </div>
+            <div data-level="4" class="level" id="level4" data-name="Vulcan Civilization">
+                <div class="lock-image-holder">
+                    <img height="70" width="70" class="lock-image" src="images/lock-solid.png" />
+                </div>
+                <div class="level-info">
+                    <h2 class="level-title">LEVEL 4</h2>
+                    <div class="avatar-image" style="background:url(images/vulcan.png);background-size: cover;background-position: center center;"></div>
+                    <h2 class="level-name">THE VULCAN CIVILIZATION</h2>
+                    <div class="solved_questions">
+                        <span class="solved_number yellow">0</span>/7 solved
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="white" style="position:relative;margin-top:30px;">        
+            <h1 align="center">SCORE: <span class="total-score">0</span></h2>
+        </div>
+    </div>
+    <div class="kaiser-container">
+        <div class="side-panel">
+            <nav class="level-indicator">
+                    
+            </nav>
+            <!-- <div class="question-tab" id="1">1</div>
+            <div class="question-tab" id="2">2</div>
+            <div class="question-tab" id="3">3</div>
+            <div class="question-tab" id="4">4</div>
+            <div class="question-tab" id="5">5</div>
+            <div class="question-tab" id="6">6</div>
+            <div class="question-tab" id="7">7</div>
+            <div class="question-tab" id="8">8</div>
+            <div class="question-tab" id="9">9</div>
+            <div class="question-tab" id="10">10</div>
+            <div class="question-tab" id="11">11</div>
+            <div class="question-tab" id="12">12</div>
+            <div class="question-tab" id="13">13</div>
+            <div class="question-tab" id="14">14</div>
+            <div class="question-tab" id="15">15</div> -->
+        </div>
+
+        <div class="container" style="overflow: scroll;">
+            <div class="title"> </div>
+            <div class="extra-info">
+                <div class="numberSolved yellow">Solved <span class="number">0</span>/<span class="toSolve"></span></div>
+                <div class="remaining-tries"> </div>
+                <div class="score yellow"> </div>
+            </div>
+
+            <div class="question"></div>
+            <div class ='question_no'></div>
+            <div class="footer">
+                <div class="submission"> 
+                    <input type="text" class="answer-entered">
+                    <button type="submit" name="SUBMIT" class="fsSubmitButton check">Answer </button>
+                </div>
+                <div class="navBar">
+                    <button class="button goToMenu">Menu</button>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "Final Frontier",
+  "version": "0.1.0",
+  "main": "index.html",
+  "window": {
+    "height": 1024,
+    "width": 1500
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "nedb": "^1.8.0",
+    "toastr": "^2.1.2"
+  }
+}
